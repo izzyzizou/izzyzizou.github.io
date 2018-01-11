@@ -1,0 +1,119 @@
+.container-section{
+    margin: 0;
+    padding: 0;
+    /*min-width: 100vh;*/
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 1.2em;
+    justify-content: center;
+    padding: 15px -150px;
+}
+.header .header-text{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 600px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 60%;
+    margin: 20px auto;
+}
+li a{
+    text-decoration: none;
+}
+li a:hover{
+    border: 1px solid blue;
+    background-color: orange;
+
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.content .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;;
+    justify-content: space-around;
+}
+.sec1, .sec2, .sec3{
+    width: 200px;
+    height: 1200px;
+    border: 1px solid blue;
+    margin-bottom: 20px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    margin: 30px auto;
+    width: 70%;
+    justify-content: space-around;
+}
+div .fa{
+    font-size: 10em;
+}
+@media screen and (min-width: 620px){
+    .footer-section{
+        display: flex;
+        width: 100%;
+        background-image: url("../img/footer-background.jpg");
+        position: relative;
+        padding-bottom: -70px;
+    }
+    hr{
+        border: none;
+        border-left: 1px solid hsla(200, 10%, 50%,100);
+        height: 200px;
+        width: 1px;
+    }
+}
+@media all and (max-width: 600px){
+    .header{
+        font-size: 1em;
+        width: 100%;
+    }
+    .burger{
+        display: inline-block;
+    }
+    .top-bun, .meat, .bottom-bun{
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .change .top-bun{
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .change .meat{
+        opacity: 0;
+    }
+    .change .bottom-bun{
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+    nav ul{
+        display: none;
+    }
+    li{
+        background-color: aqua;
+    }
+    .content .row{
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: center;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
