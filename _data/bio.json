@@ -10,7 +10,7 @@
     "location": { "address": "", "postalCode": "", "city": "New York", "countryCode": "USA", "region": "New York" },
     "profiles": [
       { "network": "github", "username": "izzyzizou", "url": "http://github.com/izzyzizou" },
-      { "network": "linkedin", "username": "izzat", "url": "http://linkedin.com/in/izzatabdujabbarov" },
+      { "network": "linkedin", "username": "izzat", "url": "http://linkedin.com/in/izzatabdujabbarov" }
     ]
   },
   "interests": [
